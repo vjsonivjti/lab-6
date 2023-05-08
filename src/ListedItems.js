@@ -20,7 +20,7 @@ export const ListedItems = ({
         {!item.inCart && (
           <div>
             <AddButton onClick={() => increaseCount(i)} />
-            <span>{item.quantity}</span>
+            <span>{item.quantity-1}</span>
             <SubtractButton onClick={() => decreaseCount(i)} />
           </div>
         )}
