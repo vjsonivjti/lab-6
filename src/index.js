@@ -117,6 +117,7 @@ function App() {
         emptyCart={emptyCart}
       />
 
+      <FixedCart onOpen={() => isCartOpen(true)} cartItems={cartCountTotal} />
       <Overlay onClick={() => isCartOpen(false)} open={cartOpen} />
 
       <Wrapper>
