@@ -14,7 +14,12 @@ jobs:
         uses: actions/checkout@master
         with:
           persist-credentials: false
-          submodules: true  # TODO remove this if not using submodules in Hexo
+
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.15.0'
+
 
       - name: Install 🔧
         run: npm update && npm install
